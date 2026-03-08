@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Saloni Khurana | Economist | World Bank | Digital Skills & Labor Markets</title>
+<meta name="description" content="Economist at the World Bank's Digital and AI Vice Presidency, researching how skills and technology reshape labor markets — and how digitisation, from connectivity to AI, can support better outcomes in developing economies."/>
+<meta name="keywords" content="Saloni Khurana, economist, digital skills, World Bank, labor markets, digitisation, AI employment, wage inequality, development economics, DPTR 2025, India, MENA, South Asia, digital occupation index"/>
+<meta name="author" content="Saloni Khurana"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://salonikhurana.github.io/"/>
+<meta property="og:title" content="Saloni Khurana — Economist, World Bank Digital & AI VP"/>
+<meta property="og:description" content="Researching how skills and technology reshape labor markets — and how digitisation, from connectivity to AI, can support better outcomes in developing economies."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@saloni_econ"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Saloni Khurana","jobTitle":"Economist","worksFor":{"@type":"Organization","name":"World Bank Group – Digital and AI Vice Presidency","url":"https://www.worldbank.org"},"alumniOf":{"@type":"EducationalOrganization","name":"Indian Institute of Foreign Trade (IIFT), New Delhi"},"url":"https://salonikhurana.github.io/","email":"skhurana@worldbank.org","sameAs":["https://www.linkedin.com/in/saloni-khurana-economist/","https://x.com/saloni_econ"],"knowsAbout":["Digital Skills","Labor Economics","AI and Labor Markets","Wage Inequality","Digitisation","Connectivity","Development Economics","Gender and Technology","Global Value Chains"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0f0f0f;--off-black:#1c1c1c;--dark-gray:#2e2e2e;
+  --mid-gray:#6b6b6b;--light-gray:#a8a8a8;
+  --rule:#e2e2e2;--rule-soft:#eeeeee;
+  --bg:#ffffff;--bg-off:#f8f8f7;--bg-subtle:#f2f2f0;
+  --gold:#b8860b;--gold-lt:#d4a017;--gold-pale:#fdf9f0;--gold-rule:#e8d5a0;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--off-black);font-family:'Inter',sans-serif;font-weight:300;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 4rem;background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.n-logo{font-family:'Lora',serif;font-size:1.05rem;font-weight:400;color:var(--black);text-decoration:none;letter-spacing:0.01em}
+.n-logo span{color:var(--gold)}
+.n-links{display:flex;list-style:none}
+.n-links a{font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid-gray);text-decoration:none;padding:0.4rem 1rem;transition:color 0.18s;position:relative}
+.n-links a::after{content:'';position:absolute;bottom:-1px;left:1rem;right:1rem;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.2s}
+.n-links a:hover,.n-links a.active{color:var(--black)}
+.n-links a:hover::after,.n-links a.active::after{transform:scaleX(1)}
+.n-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.n-burger span{width:20px;height:1px;background:var(--black);display:block}
+
+/* ── PAGES ── */
+.page{display:none;min-height:100vh;padding-top:54px}
+.page.active{display:block;animation:pfade 0.3s ease}
+@keyframes pfade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── HERO ── */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 54px);border-bottom:1px solid var(--rule)}
+.hero-left{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--rule)}
+.hero-right{display:flex;flex-direction:column;background:var(--bg-off)}
+.photo-block{flex:0 0 auto;padding:4rem 3rem 2.5rem;display:flex;flex-direction:column;align-items:center;border-bottom:1px solid var(--rule)}
+.photo-initials{width:120px;height:120px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:2rem;font-weight:400;color:var(--gold-lt);letter-spacing:0.05em;flex-shrink:0}
+/* To add photo: replace the div.photo-initials with: <img src="photo.jpg" class="photo-img" alt="Saloni Khurana"> */
+.photo-img{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block}
+.photo-name{font-family:'Lora',serif;font-size:1rem;color:var(--black);margin-top:1rem;text-align:center}
+.photo-role{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-top:0.3rem;text-align:center}
+.h-stats{flex:1}
+.h-stat{padding:1.1rem 3rem;border-bottom:1px solid var(--rule)}
+.h-stat:last-child{border-bottom:none}
+.h-stat-lbl{font-family:'JetBrains Mono',monospace;font-size:0.56rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.28rem}
+.h-stat-val{font-size:0.85rem;color:var(--dark-gray);line-height:1.45}
+.h-stat-val a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.18s}
+.h-stat-val a:hover{border-bottom-color:var(--gold)}
+.h-eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.6rem}
+.h-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.h-name{font-family:'Lora',serif;font-size:clamp(2.8rem,5vw,4.8rem);font-weight:400;line-height:1.0;color:var(--black)}
+.h-name em{font-style:italic;color:var(--gold)}
+.h-divider{width:2.5rem;height:1px;background:var(--gold);margin:1.75rem 0}
+.h-bio{font-size:1rem;color:var(--mid-gray);line-height:1.75;max-width:420px;margin-bottom:2rem}
+.h-bio strong{color:var(--off-black);font-weight:500}
+.h-links{display:flex;gap:0.6rem;flex-wrap:wrap}
+
+/* buttons */
+.btn{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.6rem 1.15rem;text-decoration:none;border:1px solid var(--rule);color:var(--mid-gray);background:transparent;transition:all 0.18s;cursor:pointer;display:inline-block}
+.btn:hover{border-color:var(--black);color:var(--black)}
+.btn.primary{background:var(--black);color:#fff;border-color:var(--black)}
+.btn.primary:hover{background:transparent;color:var(--black)}
+.btn.gold{background:var(--gold);color:#fff;border-color:var(--gold)}
+.btn.gold:hover{background:transparent;color:var(--gold)}
+
+/* ── SHARED ── */
+.sec{padding:5rem 4rem}
+.sec-off{background:var(--bg-off)}
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5rem;display:flex;align-items:center;gap:1rem}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--rule)}
+.sec-h{font-family:'Lora',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:400;line-height:1.2;color:var(--black);margin-bottom:1.75rem}
+.sec-h em{font-style:italic;color:var(--gold)}
+
+/* ── ABOUT BODY ── */
+.about-body{display:grid;grid-template-columns:1fr 300px;gap:5rem;align-items:start}
+.about-p{font-size:0.93rem;color:var(--mid-gray);line-height:1.85;margin-bottom:1rem}
+.about-p strong{color:var(--off-black);font-weight:500}
+.affil-card{border-top:1px solid var(--rule);padding:1.1rem 0}
+.affil-card:first-child{border-top:none;padding-top:0}
+.aff-org{font-family:'JetBrains Mono',monospace;font-size:0.56rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem}
+.aff-role{font-size:0.9rem;color:var(--black);margin-bottom:0.15rem}
+.aff-detail{font-size:0.78rem;color:var(--light-gray);line-height:1.5}
+
+/* ── RESEARCH SIDEBAR ── */
+.res-wrap{display:grid;grid-template-columns:220px 1fr;border:1px solid var(--rule)}
+.res-nav{border-right:1px solid var(--rule);background:var(--bg-off)}
+.res-btn{display:block;width:100%;text-align:left;font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.09em;text-transform:uppercase;padding:1.1rem 1.4rem;color:var(--mid-gray);background:none;border:none;border-bottom:1px solid var(--rule);border-left:2px solid transparent;cursor:pointer;transition:all 0.18s;line-height:1.4}
+.res-btn:last-child{border-bottom:none}
+.res-btn:hover{color:var(--black);background:var(--bg);border-left-color:var(--rule)}
+.res-btn.on{color:var(--black);background:var(--bg);border-left-color:var(--gold);font-weight:400}
+.res-panel{display:none;padding:2.5rem 2.75rem;animation:pfade 0.2s ease}
+.res-panel.on{display:block}
+
+/* panel internals */
+.rg-lbl{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--light-gray);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--rule-soft)}
+.res-group{margin-bottom:2.5rem}
+
+/* report / entry item */
+.ri{padding:1.25rem 0;border-bottom:1px solid var(--rule-soft)}
+.ri:last-child{border-bottom:none}
+.ri-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:0.3rem}
+.ri-title{font-family:'Lora',serif;font-size:0.97rem;font-weight:400;color:var(--black);line-height:1.4;flex:1}
+.ri-role{font-family:'JetBrains Mono',monospace;font-size:0.52rem;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap;padding:0.18rem 0.5rem;border:1px solid var(--gold-rule);color:var(--gold);background:var(--gold-pale);flex-shrink:0;margin-top:0.1rem}
+.ri-body{font-size:0.78rem;color:var(--mid-gray);line-height:1.6;margin-bottom:0.5rem}
+.ri-link{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.18s;display:inline-block;margin-right:0.75rem}
+.ri-link:hover{border-bottom-color:var(--gold)}
+
+/* keyword tags */
+.tags{display:flex;flex-wrap:wrap;gap:0.35rem;margin-top:0.6rem}
+.tag{font-family:'JetBrains Mono',monospace;font-size:0.5rem;letter-spacing:0.07em;padding:0.18rem 0.5rem;border:1px solid var(--rule);color:var(--light-gray);transition:all 0.18s;cursor:default}
+.tag:hover{border-color:var(--gold-rule);color:var(--gold)}
+
+/* pub card */
+.pub{padding:1.35rem 0;border-bottom:1px solid var(--rule-soft);display:grid;grid-template-columns:2.75rem 1fr;gap:0.75rem}
+.pub:last-child{border-bottom:none}
+.pub-yr{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--gold);padding-top:0.15rem}
+.pub-title{font-family:'Lora',serif;font-size:0.97rem;color:var(--black);line-height:1.4;margin-bottom:0.2rem}
+.pub-venue{font-size:0.78rem;color:var(--mid-gray);font-style:italic;margin-bottom:0.15rem}
+.pub-co{font-size:0.75rem;color:var(--light-gray);margin-top:0.12rem}
+
+/* working paper */
+.wp{padding:1.35rem 0;border-bottom:1px solid var(--rule-soft)}
+.wp:last-child{border-bottom:none}
+.wp-title{font-family:'Lora',serif;font-size:0.97rem;color:var(--black);line-height:1.35;margin-bottom:0.25rem}
+.wp-co{font-size:0.78rem;color:var(--mid-gray)}
+.wp-note{font-size:0.75rem;color:var(--gold);font-style:italic;margin-top:0.15rem}
+
+/* conference row */
+.cr{padding:1rem 0;border-bottom:1px solid var(--rule-soft);display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:baseline}
+.cr:last-child{border-bottom:none}
+.cr-name{font-size:0.88rem;color:var(--black)}
+.cr-loc{font-size:0.75rem;color:var(--light-gray);margin-top:0.1rem}
+.cr-date{font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:var(--gold);white-space:nowrap}
+
+/* ── CONNECT ── */
+.connect-wrap{background:var(--black);min-height:calc(100vh - 54px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:5rem 4rem}
+.con-eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:0.6rem}
+.con-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.con-h{font-family:'Lora',serif;font-size:clamp(2.2rem,4.5vw,4rem);font-weight:400;color:#fff;margin-bottom:0.4rem}
+.con-h em{font-style:italic;color:var(--gold-lt)}
+.con-sub{font-size:0.93rem;color:rgba(255,255,255,0.45);max-width:36rem;margin:1.25rem auto 2.5rem;line-height:1.8}
+.con-email{font-family:'Lora',serif;font-size:1.7rem;font-style:italic;color:var(--gold-lt);text-decoration:none;display:block;margin:0 auto 3rem;transition:color 0.2s}
+.con-email:hover{color:#fff}
+.con-links{display:flex;justify-content:center;gap:0.6rem;flex-wrap:wrap}
+.con-btn{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.6rem 1.2rem;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.55);text-decoration:none;transition:all 0.18s;cursor:pointer;background:none}
+.con-btn:hover{border-color:var(--gold);color:var(--gold)}
+.con-btn.con-primary{background:var(--gold);border-color:var(--gold);color:#fff}
+.con-btn.con-primary:hover{background:transparent;color:var(--gold)}
+
+/* ── FOOTER ── */
+footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);padding:1.25rem 4rem;display:flex;justify-content:space-between;align-items:center}
+footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.08em;color:rgba(255,255,255,0.2)}
+
+/* ── REVEAL ── */
+.rv{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease,transform 0.6s ease}
+.rv.on{opacity:1;transform:none}
+.rv2{transition-delay:0.1s}.rv3{transition-delay:0.2s}
+
+/* ── MOBILE ── */
+@media(max-width:900px){
+  nav{padding:0 1.25rem}
+  .n-links{display:none;position:fixed;top:54px;left:0;right:0;background:#fff;border-bottom:1px solid var(--rule);flex-direction:column;z-index:199;box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+  .n-links.open{display:flex}
+  .n-links a{padding:0.9rem 1.5rem;border-bottom:1px solid var(--rule-soft);font-size:0.65rem}
+  .n-links a::after{display:none}
+  .n-burger{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:3.5rem 1.5rem 3rem;border-right:none}
+  .hero-right{flex-direction:row;border-top:1px solid var(--rule);overflow-x:auto}
+  .photo-block{padding:2rem 1.5rem;border-bottom:none;border-right:1px solid var(--rule);flex-shrink:0}
+  .photo-initials,.photo-img{width:80px;height:80px;font-size:1.4rem}
+  .photo-name{font-size:0.85rem}
+  .h-stats{display:flex;flex-direction:row;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .h-stat{padding:1.1rem 1.25rem;border-bottom:none;border-right:1px solid var(--rule);min-width:160px;flex-shrink:0}
+  .h-stat:last-child{border-right:none}
+  .sec{padding:3.5rem 1.5rem}
+  .about-body{grid-template-columns:1fr;gap:2.5rem}
+  .res-wrap{grid-template-columns:1fr}
+  .res-nav{border-right:none;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:repeat(2,1fr)}
+  .res-btn{border-left:none;border-top:2px solid transparent;font-size:0.55rem;padding:0.85rem 0.75rem;text-align:center}
+  .res-btn.on{border-top-color:var(--gold);border-left:none}
+  .res-btn:nth-child(2n){border-right:none}
+  .res-panel{padding:1.5rem}
+  .pub{grid-template-columns:1fr}
+  .cr{grid-template-columns:1fr}
+  .cr-date{text-align:left;margin-top:0.2rem}
+  .ri-top{flex-direction:column;gap:0.4rem}
+  .connect-wrap{padding:4rem 1.5rem}
+  footer{flex-direction:column;gap:0.35rem;text-align:center;padding:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="n-logo" href="#" onclick="gp('home',this)">Saloni <span>Khurana</span></a>
+  <ul class="n-links" id="nLinks">
+    <li><a href="#" onclick="gp('home',this)" class="active">About</a></li>
+    <li><a href="#" onclick="gp('research',this)">Research</a></li>
+    <li><a href="#" onclick="gp('connect',this)">Connect</a></li>
+  </ul>
+  <div class="n-burger" onclick="document.getElementById('nLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <div class="hero">
+    <div class="hero-left">
+      <p class="h-eyebrow">World Bank · Digital &amp; AI Vice Presidency</p>
+      <h1 class="h-name">Saloni<br/><em>Khurana</em></h1>
+      <div class="h-divider"></div>
+      <p class="h-bio">
+        Economist researching how <strong>skills and technology reshape labor markets</strong> — and how digitisation, from connectivity to AI, can support better outcomes in developing economies.
+      </p>
+      <div class="h-links">
+        <a href="#" onclick="gp('research')" class="btn primary">Research</a>
+        <a href="#" onclick="gp('connect')" class="btn">Connect</a>
+        <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank" class="btn">LinkedIn ↗</a>
+        <a href="https://x.com/saloni_econ" target="_blank" class="btn">X ↗</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-block">
+        <!-- To add photo: replace the div below with <img src="photo.jpg" class="photo-img" alt="Saloni Khurana"> -->
+        <div class="photo-initials">SK</div>
+        <p class="photo-name">Saloni Khurana</p>
+        <p class="photo-role">Economist · World Bank</p>
+      </div>
+      <div class="h-stats">
+        <div class="h-stat">
+          <p class="h-stat-lbl">Current</p>
+          <p class="h-stat-val">Economist (ETC-C2)<br/>Digital &amp; AI VP · World Bank</p>
+        </div>
+        <div class="h-stat">
+          <p class="h-stat-lbl">PhD in Economics</p>
+          <p class="h-stat-val">IIFT, New Delhi<br/>Thesis submitted · Exp. June 2026</p>
+        </div>
+        <div class="h-stat">
+          <p class="h-stat-lbl">Regions</p>
+          <p class="h-stat-val">South Asia · MENA · EAP · ECA<br/>Saudi Arabia · India · Kenya</p>
+        </div>
+        <div class="h-stat">
+          <p class="h-stat-lbl">Find Me</p>
+          <p class="h-stat-val">
+            <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank">LinkedIn ↗</a>&ensp;
+            <a href="https://x.com/saloni_econ" target="_blank">@saloni_econ ↗</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec sec-off">
+    <p class="sec-label">About</p>
+    <div class="about-body">
+      <div>
+        <h2 class="sec-h rv">Who <em>benefits</em> from digital change —<br/>and who gets left behind?</h2>
+        <p class="about-p rv">I am an <strong>Economist at the World Bank's Digital and AI Vice Presidency</strong>, Washington D.C., and a PhD Scholar in Economics at the Indian Institute of Foreign Trade (IIFT), New Delhi (thesis submitted; expected June 2026).</p>
+        <p class="about-p rv">I study how <strong>digital skills, AI, and technological change</strong> reshape employment, wages, and inequality in developing economies. My work spans labor economics, digital development, applied microeconometrics, and the political economy of trade — with a focus on translating large-scale data into actionable evidence for policy.</p>
+        <p class="about-p rv">I have led country and regional analytics across <strong>South Asia, MENA, East Asia, Eastern Europe, and Africa</strong>. I also founded <strong>Data with Saloni</strong>, a mentoring initiative supporting early-career researchers on empirical methods and data analysis.</p>
+        <div class="rv" style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1.75rem">
+          <a href="#" onclick="gp('research')" class="btn primary">View Research →</a>
+          <a href="#" onclick="gp('connect')" class="btn">Get in Touch →</a>
+        </div>
+      </div>
+      <div class="rv rv2">
+        <div class="affil-card">
+          <p class="aff-org">Current</p>
+          <p class="aff-role">World Bank Group · Digital &amp; AI VP</p>
+          <p class="aff-detail">Economist (ETC-C2) · Washington D.C.<br/>STC-MTI (2022) → STC-Digital Dev. GP (2023) → ETC-Digital &amp; AI VP (2024–Present)</p>
+        </div>
+        <div class="affil-card">
+          <p class="aff-org">PhD in Economics</p>
+          <p class="aff-role">IIFT, New Delhi</p>
+          <p class="aff-detail">Thesis submitted · At external reviewers · Expected June 2026<br/><em>Decomposition of Wage Inequality in India: Role of Trade, Technology, and Institutional Factors</em></p>
+        </div>
+        <div class="affil-card">
+          <p class="aff-org">M.A. Economics</p>
+          <p class="aff-role">Ambedkar University, New Delhi · 2015–2017</p>
+        </div>
+        <div class="affil-card">
+          <p class="aff-org">B.A. (Honours) Economics</p>
+          <p class="aff-role">Lakshmibai College, University of Delhi · 2012–2015</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════
+     RESEARCH
+══════════════════════════════ -->
+<div class="page" id="page-research">
+  <div class="sec">
+    <p class="sec-label">Research</p>
+    <h2 class="sec-h rv">Publications, Reports <em>&amp; Working Papers</em></h2>
+
+    <div class="res-wrap rv">
+      <div class="res-nav">
+        <button class="res-btn on"  onclick="rp('wbreports',this)">WB Flagship<br/>Reports</button>
+        <button class="res-btn"     onclick="rp('articles',this)">Journal<br/>Articles</button>
+        <button class="res-btn"     onclick="rp('chapters',this)">Book<br/>Chapters</button>
+        <button class="res-btn"     onclick="rp('working',this)">Working<br/>Papers</button>
+        <button class="res-btn"     onclick="rp('opeds',this)">Op-Eds &amp;<br/>Commentary</button>
+        <button class="res-btn"     onclick="rp('other',this)">Other<br/>Reports</button>
+        <button class="res-btn"     onclick="rp('conf',this)">Conferences &amp;<br/>Refereeing</button>
+      </div>
+
+      <div>
+
+        <!-- ── WB REPORTS ── -->
+        <div class="res-panel on" id="rp-wbreports">
+
+          <div class="res-group">
+            <p class="rg-lbl">Global Flagship Reports</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">World Development Report 2026</p>
+                <span class="ri-role">Analyst</span>
+              </div>
+              <p class="ri-body">Applied text-based analysis and clustering to millions of job postings to identify emerging AI and GenAI occupations globally. Contributes to the Bank's highest-profile annual publication.</p>
+              <div class="tags"><span class="tag">AI &amp; Labor Markets</span><span class="tag">Job Postings</span><span class="tag">Emerging Occupations</span><span class="tag">Future of Work</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Digital Progress and Trends Report 2025 — Competency Chapter</p>
+                <span class="ri-role">Lead Author</span>
+              </div>
+              <p class="ri-body">Designed the Digital Occupation Index and Digital Skills Framework. Analyzed demand–supply dynamics of digital, AI, and GenAI skills across 100+ economies using O*NET, Lightcast, LinkedIn, GitHub, and Coursera. Classified 14,000+ unique skills into a standardized taxonomy.</p>
+              <div class="tags"><span class="tag">Digital Skills</span><span class="tag">AI Skills</span><span class="tag">Skill Demand &amp; Supply</span><span class="tag">Digital Occupation Index</span><span class="tag">Labor Markets</span><span class="tag">Global</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Digital Progress and Trends Report 2025 — Connectivity Chapter</p>
+                <span class="ri-role">Lead Author</span>
+              </div>
+              <p class="ri-body">Analyzed internet speed inequality using Ookla geospatial data at 610.8m grid resolution. Global assessment of connectivity disparities and AI readiness prerequisites across economies.</p>
+              <div class="tags"><span class="tag">Internet Connectivity</span><span class="tag">Digital Infrastructure</span><span class="tag">Geospatial Analysis</span><span class="tag">AI Readiness</span><span class="tag">Global</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Digital Progress and Trends Report 2023 — AI Chapter</p>
+                <span class="ri-role">Co-Author</span>
+              </div>
+              <p class="ri-body">Co-authored: "Artificial Intelligence: Revolutionary Potential and Huge Uncertainties." Literature review on early evidence of AI's impact on labor markets and employment outcomes.</p>
+              <div class="tags"><span class="tag">AI</span><span class="tag">Labor Markets</span><span class="tag">Technology &amp; Employment</span><span class="tag">Developing Economies</span></div>
+            </div>
+          </div>
+
+          <div class="res-group">
+            <p class="rg-lbl">India</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Cities and Jobs in India: Unlocking Employment Potential through Urbanization 2026 <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Lead Author</span>
+              </div>
+              <p class="ri-body">Spatial clustering and geospatial analysis using Prowess firm data and Lightcast job postings — how city size shapes formal employment and digital skills demand across mega vs. small cities.</p>
+              <div class="tags"><span class="tag">Urban Labor Markets</span><span class="tag">Digital Skills</span><span class="tag">Formal Employment</span><span class="tag">Geospatial Analysis</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">India Growth and Jobs Report 2026 <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Lead Author</span>
+              </div>
+              <p class="ri-body">How digitisation affects employment, wages, digital skills, and gig work — including AI and GenAI dimensions — using PLFS, job postings, and worker profiles.</p>
+              <div class="tags"><span class="tag">Digitisation</span><span class="tag">Gig Work</span><span class="tag">Wages</span><span class="tag">AI</span><span class="tag">India</span><span class="tag">PLFS</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">India Country Economic Memorandum — Becoming a High-Income Economy in a Generation (2024)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Analyzed firm and labor productivity trends and female labor force participation using Prowess and PLFS data with two-way regressions and TFP computation.</p>
+              <div class="tags"><span class="tag">Productivity</span><span class="tag">Female LFPR</span><span class="tag">TFP</span><span class="tag">Firm-Level Data</span><span class="tag">India</span></div>
+            </div>
+          </div>
+
+          <div class="res-group">
+            <p class="rg-lbl">Saudi Arabia</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Saudi Arabia RAS — Digital Skills Gap Diagnostics <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Developed occupation-level digital skills gap diagnostics using job postings, worker profiles, and LinkedIn data to assess the supply–demand mismatch in Saudi Arabia's labor market.</p>
+              <div class="tags"><span class="tag">Digital Skills</span><span class="tag">Skills Gap</span><span class="tag">Labor Market Diagnostics</span><span class="tag">Saudi Arabia</span><span class="tag">MENA</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Saudi Arabia RAS — AI Occupational Exposure Estimation <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Estimated occupation-level AI and GenAI exposure using task-based analysis of job postings and O*NET data to identify workforce segments most affected by automation.</p>
+              <div class="tags"><span class="tag">AI Exposure</span><span class="tag">Automation</span><span class="tag">Occupational Analysis</span><span class="tag">Saudi Arabia</span><span class="tag">MENA</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Saudi Arabia RAS — Vision 2030 Digital Economy Readiness Assessment <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Assessed Saudi Arabia's digital economy readiness against Vision 2030 targets. Coordinated survey vendor hiring; presented initial findings to Saudi government delegations.</p>
+              <div class="tags"><span class="tag">Digital Economy</span><span class="tag">Vision 2030</span><span class="tag">Policy Engagement</span><span class="tag">Saudi Arabia</span><span class="tag">MENA</span></div>
+            </div>
+          </div>
+
+          <div class="res-group">
+            <p class="rg-lbl">East Asia &amp; Pacific</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Services Unbound: Digital Technologies and Policy Reform in East Asia and Pacific (2024)</p>
+                <span class="ri-role">Core Analyst</span>
+              </div>
+              <p class="ri-body">Conducted high-resolution geospatial analysis of internet speed changes pre- and post-COVID using Ookla data at 610.8m grid resolution across East Asia and Pacific.</p>
+              <div class="tags"><span class="tag">Internet Connectivity</span><span class="tag">Geospatial Analysis</span><span class="tag">COVID-19</span><span class="tag">Digital Infrastructure</span><span class="tag">EAP</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Indonesia Economic Prospects 2026 <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Contributed AI and GenAI skill exposure analysis for Indonesia — occupation-level exposure measures from job postings and worker profiles to inform workforce policy.</p>
+              <div class="tags"><span class="tag">AI Exposure</span><span class="tag">Digital Skills</span><span class="tag">Indonesia</span><span class="tag">EAP</span></div>
+            </div>
+          </div>
+
+          <div class="res-group">
+            <p class="rg-lbl">Central Asia &amp; Eastern Europe</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Central Asia Jobs Report 2026 <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Digital skills demand and supply analysis across Central Asia using occupation-level exposure measures from job postings, worker profiles, and LinkedIn data — informing regional workforce strategy.</p>
+              <div class="tags"><span class="tag">Digital Skills</span><span class="tag">Labor Markets</span><span class="tag">Central Asia</span><span class="tag">ECA</span><span class="tag">Job Postings</span></div>
+            </div>
+          </div>
+
+          <div class="res-group">
+            <p class="rg-lbl">MENA &amp; Africa</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Digital Engagement in Kenya (PASA) <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">AI and digital skills gap diagnostics for Kenya — assessing workforce readiness for digital transformation and informing investment in skills development.</p>
+              <div class="tags"><span class="tag">Digital Skills</span><span class="tag">AI Readiness</span><span class="tag">Kenya</span><span class="tag">Africa</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">MENA Advisory — Lebanon &amp; Egypt <em style="font-size:0.8rem;color:var(--light-gray)">(Upcoming)</em></p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Digital and AI skills gap analyses for Lebanon and Egypt — developing evidence base to guide national workforce development strategies and digital economy investments.</p>
+              <div class="tags"><span class="tag">Digital Skills</span><span class="tag">AI</span><span class="tag">Lebanon</span><span class="tag">Egypt</span><span class="tag">MENA</span></div>
+            </div>
+          </div>
+
+        </div><!-- end wbreports panel -->
+
+        <!-- ── JOURNAL ARTICLES ── -->
+        <div class="res-panel" id="rp-articles">
+          <div class="pub">
+            <span class="pub-yr">2025</span>
+            <div>
+              <p class="pub-title">"Changes in Wages and Industry-Level Export Exposure: Implications for India's Wage Inequality"</p>
+              <p class="pub-venue">Empirical Economic Letters, 2025</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Wage Inequality</span><span class="tag">Export Exposure</span><span class="tag">India</span><span class="tag">Trade</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2025</span>
+            <div>
+              <p class="pub-title">"Quantifying Trade's Impact: Decomposing Wage Inequality Dynamics in Post-Liberalization India"</p>
+              <p class="pub-venue">Empirical Economic Letters, 2025</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Wage Inequality</span><span class="tag">Trade Liberalization</span><span class="tag">Decomposition</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2022</span>
+            <div>
+              <p class="pub-title">"Factor Endowments and the Structure of Indian Manufacturing"</p>
+              <p class="pub-venue">The Indian Economic Journal, 2022</p>
+              <p class="pub-co">with Anjali Tandon and Akash Pal</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Factor Endowments</span><span class="tag">Manufacturing</span><span class="tag">India</span><span class="tag">Industrial Structure</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2021</span>
+            <div>
+              <p class="pub-title">"Public Safety for Women: Is Regulation of Social Drinking Spaces Effective?"</p>
+              <p class="pub-venue">Journal of Development Studies, 2021</p>
+              <p class="pub-co">with Kanika Mahajan</p>
+              <a href="#" class="ri-link" style="margin-top:0.5rem;display:inline-block">Access →</a>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Gender</span><span class="tag">Public Safety</span><span class="tag">Crime</span><span class="tag">Regulation</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2019</span>
+            <div>
+              <p class="pub-title">"Role of Personal Friendship and Charisma in Foreign Relations"</p>
+              <p class="pub-venue">Focus WTO-IB, Vol. 21(3), 2019</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Political Economy</span><span class="tag">International Relations</span><span class="tag">Trade Policy</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── BOOK CHAPTERS ── -->
+        <div class="res-panel" id="rp-chapters">
+          <div class="pub">
+            <span class="pub-yr">2023</span>
+            <div>
+              <p class="pub-title">"Evolution of Wage Inequality in India (1983–2017): The Role of Occupational Task Content"</p>
+              <p class="pub-venue">Oxford University Press, 2023</p>
+              <p class="pub-co">with Kanika Mahajan</p>
+              <a href="#" class="ri-link" style="margin-top:0.5rem;display:inline-block">Access →</a>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Wage Inequality</span><span class="tag">Occupational Tasks</span><span class="tag">Routine vs Non-Routine</span><span class="tag">India</span><span class="tag">Labor Markets</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2023</span>
+            <div>
+              <p class="pub-title">"India's Industrial Performance: A Review of the Post-Independence Period"</p>
+              <p class="pub-venue">Routledge Handbook of the Indian Economy, 2023</p>
+              <p class="pub-co">with Biswajit Nag and Ashima Puniani</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Industrial Policy</span><span class="tag">Manufacturing</span><span class="tag">Economic History</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2020</span>
+            <div>
+              <p class="pub-title">"India's Trade Sensitive Employment: A Comprehensive Firm-level Analysis"</p>
+              <p class="pub-venue">In Lakhanpal et al. (Eds.), Trade, Investment and Economic Growth, Routledge, 2020</p>
+              <p class="pub-co">with Biswajit Nag</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Trade</span><span class="tag">Employment</span><span class="tag">Firm-Level</span><span class="tag">GVCs</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div style="margin-top:2rem;padding-top:1.75rem;border-top:1px solid var(--rule-soft)">
+            <p class="rg-lbl" style="margin-bottom:1.25rem">Public Data Contributions</p>
+            <div class="wp">
+              <p class="wp-title">Occupational Classification Concordance for India</p>
+              <p class="wp-co">Crosswalks linking NCO-1968 and NCO-2004 with ISCO-88 · Integrated into World Bank's Global Labor Database</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Occupational Classification</span><span class="tag">Data Infrastructure</span><span class="tag">India</span></div>
+            </div>
+            <div class="wp">
+              <p class="wp-title">Labor Market Estimates via CEDA Portal</p>
+              <p class="wp-co">5,000+ district, state, and national-level estimates from NSS and PLFS rounds</p>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Labor Market Data</span><span class="tag">NSS</span><span class="tag">PLFS</span><span class="tag">India</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── WORKING PAPERS ── -->
+        <div class="res-panel" id="rp-working">
+          <div class="wp">
+            <p class="wp-title">"Click, Code, Earn: The Returns to Digital Skills"</p>
+            <p class="wp-co">with Yan Liu, Antonio Martins-Neto, and Juan Porras · World Bank</p>
+            <div class="tags" style="margin-top:0.5rem"><span class="tag">Digital Skills</span><span class="tag">Returns to Skills</span><span class="tag">Wages</span><span class="tag">Developing Economies</span></div>
+          </div>
+          <div class="wp">
+            <p class="wp-title">"Is Online Job Posting Data Useful in the Context of Developing Countries?"</p>
+            <p class="wp-co">with Shu Yu, Hieu Duc Nguyen, and Yan Liu · World Bank</p>
+            <div class="tags" style="margin-top:0.5rem"><span class="tag">Job Postings</span><span class="tag">Data Methods</span><span class="tag">Labor Markets</span><span class="tag">Developing Countries</span></div>
+          </div>
+          <div class="wp">
+            <p class="wp-title">"Do Minimum Wages Reduce Inequality? Evidence from India"</p>
+            <p class="wp-co">with Kanika Mahajan and Kunal Sen</p>
+            <p class="wp-note">Ashoka University Discussion Paper No. 139</p>
+            <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+            <div class="tags" style="margin-top:0.5rem"><span class="tag">Minimum Wages</span><span class="tag">Inequality</span><span class="tag">India</span><span class="tag">Labor Policy</span></div>
+          </div>
+          <div class="wp">
+            <p class="wp-title">"GVCs, Skill Bias, and Wage Inequality in India"</p>
+            <p class="wp-note">IIFT Working Paper EC-25-77</p>
+            <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+            <div class="tags" style="margin-top:0.5rem"><span class="tag">GVCs</span><span class="tag">Skill Bias</span><span class="tag">Wage Inequality</span><span class="tag">India</span><span class="tag">Trade</span></div>
+          </div>
+          <div class="wp">
+            <p class="wp-title">"Understanding Productivity of Indian Firms"</p>
+            <p class="wp-co">with Pavel Chakraborty and Ruchita Manghnani</p>
+            <div class="tags" style="margin-top:0.5rem"><span class="tag">Firm Productivity</span><span class="tag">TFP</span><span class="tag">Manufacturing</span><span class="tag">India</span></div>
+          </div>
+          <div class="wp">
+            <p class="wp-title">"Employment Patterns in the Indian Manufacturing Sector"</p>
+            <p class="wp-co">with Pavel Chakraborty and Ruchita Manghnani</p>
+            <div class="tags" style="margin-top:0.5rem"><span class="tag">Employment</span><span class="tag">Manufacturing</span><span class="tag">India</span><span class="tag">Firm-Level</span></div>
+          </div>
+        </div>
+
+        <!-- ── OP-EDS ── -->
+        <div class="res-panel" id="rp-opeds">
+          <div class="pub">
+            <span class="pub-yr">2025</span>
+            <div>
+              <p class="pub-title">"India's Minimum Wage Success, and the Work Ahead"</p>
+              <p class="pub-venue">Policy Edge, August 2025</p>
+              <p class="pub-co">with Kanika Mahajan and Kunal Sen</p>
+              <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Minimum Wages</span><span class="tag">Labor Policy</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2025</span>
+            <div>
+              <p class="pub-title">"Do Minimum Wages Reduce Inequality in India?"</p>
+              <p class="pub-venue">Ideas for India, February 2025</p>
+              <p class="pub-co">with Kanika Mahajan and Kunal Sen</p>
+              <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Minimum Wages</span><span class="tag">Inequality</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2019</span>
+            <div>
+              <p class="pub-title">"Creating Safe Public Spaces for Women and Alcohol Consumption in Bars"</p>
+              <p class="pub-venue">Ideas for India, November 2019</p>
+              <p class="pub-co">with Kanika Mahajan</p>
+              <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Gender</span><span class="tag">Public Safety</span><span class="tag">Women</span><span class="tag">India</span></div>
+            </div>
+          </div>
+          <div class="pub">
+            <span class="pub-yr">2018</span>
+            <div>
+              <p class="pub-title">"Changing the Status Quo on Sexual Assault"</p>
+              <p class="pub-venue">Livemint, November 2018</p>
+              <p class="pub-co">with Kanika Mahajan</p>
+              <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+              <div class="tags" style="margin-top:0.5rem"><span class="tag">Gender</span><span class="tag">Women's Safety</span><span class="tag">Policy</span><span class="tag">India</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── OTHER REPORTS ── -->
+        <div class="res-panel" id="rp-other">
+          <div class="res-group">
+            <p class="rg-lbl">IIFT, New Delhi &amp; Other Reports</p>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Walmart's Global Sourcing Program: Trade and Employment Implications for India (2020)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Led primary research on supplier-level outcomes; secondary analysis of retail FDI, employment trends, and export performance linked to global sourcing.</p>
+              <div class="tags"><span class="tag">Trade</span><span class="tag">Employment</span><span class="tag">FDI</span><span class="tag">India</span><span class="tag">Global Sourcing</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Evaluation of the IFLADP Scheme (2020)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Employment diagnostics for labor impacts under the Indian Footwear and Leather Development Programme.</p>
+              <div class="tags"><span class="tag">Program Evaluation</span><span class="tag">Employment</span><span class="tag">Industrial Policy</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Evaluation of the Scheme for Investment Promotion under the REEIS Framework (2020)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Assessed outreach effectiveness and sectoral targeting of India's investment promotion activities.</p>
+              <div class="tags"><span class="tag">Investment Promotion</span><span class="tag">Policy Evaluation</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Employment Diagnostics in Labor-Intensive Indian Manufacturing (2019)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Sector-level analysis on employment trends, trade exposure, and labor market constraints in post-liberalization India.</p>
+              <div class="tags"><span class="tag">Manufacturing</span><span class="tag">Employment</span><span class="tag">Trade Exposure</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">India's Imports from China: Impact on Indian Manufacturing (2019)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Sector-level analysis on import competition, capacity utilization, and substitution potential using RCA and unit labor cost metrics.</p>
+              <div class="tags"><span class="tag">Import Competition</span><span class="tag">China</span><span class="tag">Manufacturing</span><span class="tag">India</span><span class="tag">Trade Policy</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Import Tariffs and Effective Rate of Protection — Indian Aluminum Industry (2018)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Analyzed tariff structures, employment intensity, downstream sector linkages, and FTA policy scenarios.</p>
+              <div class="tags"><span class="tag">Tariffs</span><span class="tag">Trade Policy</span><span class="tag">FTA</span><span class="tag">Industry Analysis</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">India's Trade and Employment Linkages in Manufacturing (2018)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Analyzed export growth, capital intensity, and employment outcomes disaggregated by gender and firm size.</p>
+              <div class="tags"><span class="tag">Trade</span><span class="tag">Employment</span><span class="tag">Gender</span><span class="tag">Manufacturing</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Impact of Free Trade Agreements on the Indian Copper Industry (2017)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">RCA trends, trade flows, and employment patterns; FTA comparative analysis.</p>
+              <div class="tags"><span class="tag">FTA</span><span class="tag">Trade</span><span class="tag">Industry Analysis</span><span class="tag">India</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Post-Disaster Needs Assessment — South Africa &amp; Azerbaijan (2020)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">Labor market impact assessments during COVID-19 for South Africa and Azerbaijan.</p>
+              <div class="tags"><span class="tag">COVID-19</span><span class="tag">Labor Markets</span><span class="tag">South Africa</span><span class="tag">Azerbaijan</span><span class="tag">Post-Disaster</span></div>
+            </div>
+
+            <div class="ri">
+              <div class="ri-top">
+                <p class="ri-title">Evaluation Study of Trainers Effectiveness Program (2020)</p>
+                <span class="ri-role">Core Team Member</span>
+              </div>
+              <p class="ri-body">National skill training survey — trainer effectiveness in India's skill ecosystem.</p>
+              <div class="tags"><span class="tag">Skills Training</span><span class="tag">Program Evaluation</span><span class="tag">India</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CONFERENCES ── -->
+        <div class="res-panel" id="rp-conf">
+          <div class="res-group">
+            <p class="rg-lbl">Conferences &amp; Presentations</p>
+            <div class="cr"><div><p class="cr-name">World Bank Tokyo Hub Seminar</p><p class="cr-loc">Presenter — Digital Progress and Trends Report 2025</p></div><p class="cr-date">2025</p></div>
+            <div class="cr"><div><p class="cr-name">World Bank Agri-AI Event</p><p class="cr-loc">Online Expert for Q&amp;A</p></div><p class="cr-date">2025</p></div>
+            <div class="cr"><div><p class="cr-name">Indian Statistical Institute (ISI), Delhi</p><p class="cr-loc">Annual Conference</p></div><p class="cr-date">Dec 2022</p></div>
+            <div class="cr"><div><p class="cr-name">Delhi School of Economics &amp; The Econometric Society</p><p class="cr-loc">Annual Conference, Delhi</p></div><p class="cr-date">Dec 2022</p></div>
+            <div class="cr"><div><p class="cr-name">Ambedkar University, Delhi</p><p class="cr-loc">Research Seminar</p></div><p class="cr-date">Nov 2018</p></div>
+            <div class="cr"><div><p class="cr-name">IIFT New Delhi — Trade and Development Conference</p></div><p class="cr-date">Dec 2018</p></div>
+          </div>
+          <div class="res-group">
+            <p class="rg-lbl">Journal Refereeing</p>
+            <div class="cr"><div><p class="cr-name">Journal of Development Economics</p></div></div>
+            <div class="cr"><div><p class="cr-name">Modern Economy</p></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     CONNECT
+══════════════════════════════ -->
+<div class="page" id="page-connect">
+  <div class="connect-wrap">
+    <p class="con-eyebrow">Open to collaborations &amp; conversations</p>
+    <h2 class="con-h">Let's exchange <em>ideas</em></h2>
+    <p class="con-sub">On digital skills, AI and labor markets, development economics, data collaborations, or new research questions. Always interested in people working on related problems.</p>
+    <a href="mailto:skhurana@worldbank.org" class="con-email">skhurana@worldbank.org</a>
+    <div class="con-links">
+      <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank" class="con-btn con-primary">LinkedIn ↗</a>
+      <a href="https://x.com/saloni_econ" target="_blank" class="con-btn">@saloni_econ ↗</a>
+      <a href="#" onclick="gp('research')" class="con-btn">Research</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Saloni Khurana · Economist · World Bank Digital &amp; AI VP</p>
+  <p>salonikhurana.github.io</p>
+  <p>© 2025</p>
+</footer>
+
+<script>
+function gp(name,el){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.n-links a').forEach(a=>a.classList.remove('active'));
+  if(el&&el.classList)el.classList.add('active');
+  window.scrollTo(0,0);
+  document.getElementById('nLinks').classList.remove('open');
+  setTimeout(rv,60);
+}
+function rp(name,btn){
+  document.querySelectorAll('.res-panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.res-btn').forEach(b=>b.classList.remove('on'));
+  document.getElementById('rp-'+name).classList.add('on');
+  btn.classList.add('on');
+}
+function rv(){
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});
+  },{threshold:0.06});
+  document.querySelectorAll('.rv:not(.on)').forEach(el=>obs.observe(el));
+}
+rv();
+</script>
+</body>
+</html>
