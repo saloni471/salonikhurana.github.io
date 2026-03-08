@@ -24,7 +24,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --black:#0f0f0f;--off-black:#1c1c1c;--dark-gray:#2e2e2e;
-  --mid-gray:#6b6b6b;--light-gray:#a8a8a8;
+  --mid-gray:#3d3d3d;--light-gray:#5a5a5a;
   --rule:#e2e2e2;--rule-soft:#eeeeee;
   --bg:#ffffff;--bg-off:#f8f8f7;--bg-subtle:#f2f2f0;
   --gold:#b8860b;--gold-lt:#d4a017;--gold-pale:#fdf9f0;--gold-rule:#e8d5a0;
@@ -71,8 +71,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 .h-name{font-family:'Lora',serif;font-size:clamp(2.8rem,5vw,4.8rem);font-weight:400;line-height:1.0;color:var(--black)}
 .h-name em{font-style:italic;color:var(--gold)}
 .h-divider{width:2.5rem;height:1px;background:var(--gold);margin:1.75rem 0}
-.h-bio{font-size:1rem;color:var(--mid-gray);line-height:1.75;max-width:420px;margin-bottom:2rem}
-.h-bio strong{color:var(--off-black);font-weight:500}
+.h-bio{font-size:1.1rem;color:var(--off-black);line-height:1.8;max-width:420px;margin-bottom:2rem}
+.h-bio strong{color:var(--black);font-weight:500}
 .h-links{display:flex;gap:0.6rem;flex-wrap:wrap}
 
 /* buttons */
@@ -92,14 +92,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 .sec-h em{font-style:italic;color:var(--gold)}
 
 /* ── ABOUT BODY ── */
-.about-body{display:grid;grid-template-columns:1fr 300px;gap:5rem;align-items:start}
-.about-p{font-size:0.93rem;color:var(--mid-gray);line-height:1.85;margin-bottom:1rem}
+.about-body{max-width:720px}
+.about-p{font-size:1rem;color:var(--mid-gray);line-height:1.85;margin-bottom:1rem}
 .about-p strong{color:var(--off-black);font-weight:500}
 .affil-card{border-top:1px solid var(--rule);padding:1.1rem 0}
 .affil-card:first-child{border-top:none;padding-top:0}
-.aff-org{font-family:'JetBrains Mono',monospace;font-size:0.56rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem}
-.aff-role{font-size:0.9rem;color:var(--black);margin-bottom:0.15rem}
-.aff-detail{font-size:0.78rem;color:var(--light-gray);line-height:1.5}
+.aff-org{font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem}
+.aff-role{font-size:0.95rem;color:var(--black);margin-bottom:0.15rem}
+.aff-detail{font-size:0.83rem;color:var(--mid-gray);line-height:1.55}
 
 /* ── RESEARCH SIDEBAR ── */
 .res-wrap{display:grid;grid-template-columns:220px 1fr;border:1px solid var(--rule)}
@@ -112,7 +112,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 .res-panel.on{display:block}
 
 /* panel internals */
-.rg-lbl{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--light-gray);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--rule-soft)}
+.rg-lbl{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid-gray);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--rule-soft)}
 .res-group{margin-bottom:2.5rem}
 
 /* report / entry item */
@@ -121,13 +121,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 .ri-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:0.3rem}
 .ri-title{font-family:'Lora',serif;font-size:0.97rem;font-weight:400;color:var(--black);line-height:1.4;flex:1}
 .ri-role{font-family:'JetBrains Mono',monospace;font-size:0.52rem;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap;padding:0.18rem 0.5rem;border:1px solid var(--gold-rule);color:var(--gold);background:var(--gold-pale);flex-shrink:0;margin-top:0.1rem}
-.ri-body{font-size:0.78rem;color:var(--mid-gray);line-height:1.6;margin-bottom:0.5rem}
+.ri-body{font-size:0.88rem;color:var(--mid-gray);line-height:1.65;margin-bottom:0.5rem}
 .ri-link{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.18s;display:inline-block;margin-right:0.75rem}
 .ri-link:hover{border-bottom-color:var(--gold)}
 
 /* keyword tags */
 .tags{display:flex;flex-wrap:wrap;gap:0.35rem;margin-top:0.6rem}
-.tag{font-family:'JetBrains Mono',monospace;font-size:0.5rem;letter-spacing:0.07em;padding:0.18rem 0.5rem;border:1px solid var(--rule);color:var(--light-gray);transition:all 0.18s;cursor:default}
+.tag{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.07em;padding:0.18rem 0.5rem;border:1px solid var(--rule);color:var(--mid-gray);transition:all 0.18s;cursor:default}
 .tag:hover{border-color:var(--gold-rule);color:var(--gold)}
 
 /* pub card */
@@ -135,21 +135,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 .pub:last-child{border-bottom:none}
 .pub-yr{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--gold);padding-top:0.15rem}
 .pub-title{font-family:'Lora',serif;font-size:0.97rem;color:var(--black);line-height:1.4;margin-bottom:0.2rem}
-.pub-venue{font-size:0.78rem;color:var(--mid-gray);font-style:italic;margin-bottom:0.15rem}
-.pub-co{font-size:0.75rem;color:var(--light-gray);margin-top:0.12rem}
+.pub-venue{font-size:0.85rem;color:var(--mid-gray);font-style:italic;margin-bottom:0.15rem}
+.pub-co{font-size:0.83rem;color:var(--light-gray);margin-top:0.12rem}
 
 /* working paper */
 .wp{padding:1.35rem 0;border-bottom:1px solid var(--rule-soft)}
 .wp:last-child{border-bottom:none}
 .wp-title{font-family:'Lora',serif;font-size:0.97rem;color:var(--black);line-height:1.35;margin-bottom:0.25rem}
-.wp-co{font-size:0.78rem;color:var(--mid-gray)}
-.wp-note{font-size:0.75rem;color:var(--gold);font-style:italic;margin-top:0.15rem}
+.wp-co{font-size:0.85rem;color:var(--mid-gray)}
+.wp-note{font-size:0.82rem;color:var(--gold);font-style:italic;margin-top:0.15rem}
 
 /* conference row */
 .cr{padding:1rem 0;border-bottom:1px solid var(--rule-soft);display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:baseline}
 .cr:last-child{border-bottom:none}
 .cr-name{font-size:0.88rem;color:var(--black)}
-.cr-loc{font-size:0.75rem;color:var(--light-gray);margin-top:0.1rem}
+.cr-loc{font-size:0.82rem;color:var(--light-gray);margin-top:0.1rem}
 .cr-date{font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:var(--gold);white-space:nowrap}
 
 /* ── CONNECT ── */
@@ -158,11 +158,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 .con-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold)}
 .con-h{font-family:'Lora',serif;font-size:clamp(2.2rem,4.5vw,4rem);font-weight:400;color:#fff;margin-bottom:0.4rem}
 .con-h em{font-style:italic;color:var(--gold-lt)}
-.con-sub{font-size:0.93rem;color:rgba(255,255,255,0.45);max-width:36rem;margin:1.25rem auto 2.5rem;line-height:1.8}
+.con-sub{font-size:0.95rem;color:rgba(255,255,255,0.7);max-width:36rem;margin:1.25rem auto 2.5rem;line-height:1.8}
 .con-email{font-family:'Lora',serif;font-size:1.7rem;font-style:italic;color:var(--gold-lt);text-decoration:none;display:block;margin:0 auto 3rem;transition:color 0.2s}
 .con-email:hover{color:#fff}
 .con-links{display:flex;justify-content:center;gap:0.6rem;flex-wrap:wrap}
-.con-btn{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.6rem 1.2rem;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.55);text-decoration:none;transition:all 0.18s;cursor:pointer;background:none}
+.con-btn{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.6rem 1.2rem;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.75);text-decoration:none;transition:all 0.18s;cursor:pointer;background:none}
 .con-btn:hover{border-color:var(--gold);color:var(--gold)}
 .con-btn.con-primary{background:var(--gold);border-color:var(--gold);color:#fff}
 .con-btn.con-primary:hover{background:transparent;color:var(--gold)}
@@ -194,7 +194,6 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
   .h-stat{padding:1.1rem 1.25rem;border-bottom:none;border-right:1px solid var(--rule);min-width:160px;flex-shrink:0}
   .h-stat:last-child{border-right:none}
   .sec{padding:3.5rem 1.5rem}
-  .about-body{grid-template-columns:1fr;gap:2.5rem}
   .res-wrap{grid-template-columns:1fr}
   .res-nav{border-right:none;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:repeat(2,1fr)}
   .res-btn{border-left:none;border-top:2px solid transparent;font-size:0.55rem;padding:0.85rem 0.75rem;text-align:center}
@@ -207,6 +206,11 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
   .ri-top{flex-direction:column;gap:0.4rem}
   .connect-wrap{padding:4rem 1.5rem}
   footer{flex-direction:column;gap:0.35rem;text-align:center;padding:1.25rem}
+  #page-data .sec{padding:3rem 1.5rem}
+  #page-data [style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr !important}
+  #page-data [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important}
+  #page-data [style*="grid-column:span 2"]{grid-column:span 1 !important}
+  #page-data [style*="padding:5rem 4rem"]{padding:3.5rem 1.5rem 3rem !important}
 }
 </style>
 </head>
@@ -218,6 +222,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
   <ul class="n-links" id="nLinks">
     <li><a href="#" onclick="gp('home',this)" class="active">About</a></li>
     <li><a href="#" onclick="gp('research',this)">Research</a></li>
+    <li><a href="#" onclick="gp('data',this)">Data with Saloni</a></li>
     <li><a href="#" onclick="gp('connect',this)">Connect</a></li>
   </ul>
   <div class="n-burger" onclick="document.getElementById('nLinks').classList.toggle('open')">
@@ -262,14 +267,12 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
           <p class="h-stat-val">IIFT, New Delhi<br/>Thesis submitted · Exp. June 2026</p>
         </div>
         <div class="h-stat">
-          <p class="h-stat-lbl">Regions</p>
-          <p class="h-stat-val">South Asia · MENA · EAP · ECA<br/>Saudi Arabia · India · Kenya</p>
-        </div>
-        <div class="h-stat">
           <p class="h-stat-lbl">Find Me</p>
           <p class="h-stat-val">
             <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank">LinkedIn ↗</a>&ensp;
-            <a href="https://x.com/saloni_econ" target="_blank">@saloni_econ ↗</a>
+            <a href="https://x.com/saloni_econ" target="_blank">X ↗</a><br/>
+            <a href="https://scholar.google.com/citations?user=vmSC6iEAAAAJ&hl=en" target="_blank">Google Scholar ↗</a>&ensp;
+            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3312896" target="_blank">SSRN ↗</a>
           </p>
         </div>
       </div>
@@ -282,31 +285,27 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
       <div>
         <h2 class="sec-h rv">Who <em>benefits</em> from digital change —<br/>and who gets left behind?</h2>
         <p class="about-p rv">I am an <strong>Economist at the World Bank's Digital and AI Vice Presidency</strong>, Washington D.C., and a PhD Scholar in Economics at the Indian Institute of Foreign Trade (IIFT), New Delhi (thesis submitted; expected June 2026).</p>
-        <p class="about-p rv">I study how <strong>digital skills, AI, and technological change</strong> reshape employment, wages, and inequality in developing economies. My work spans labor economics, digital development, applied microeconometrics, and the political economy of trade — with a focus on translating large-scale data into actionable evidence for policy.</p>
-        <p class="about-p rv">I have led country and regional analytics across <strong>South Asia, MENA, East Asia, Eastern Europe, and Africa</strong>. I also founded <strong>Data with Saloni</strong>, a mentoring initiative supporting early-career researchers on empirical methods and data analysis.</p>
-        <div class="rv" style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1.75rem">
+        <p class="about-p rv">I study how <strong>digital skills, AI, and technological change</strong> reshape employment, wages, and inequality in developing economies — translating large-scale data into actionable evidence for policy. I also founded <strong>Data with Saloni</strong>, a mentoring initiative supporting early-career researchers on empirical methods and data analysis.</p>
+
+        <p class="rv" style="font-family:'JetBrains Mono',monospace;font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin:2rem 0 0.9rem">Research Topics</p>
+        <div class="rv" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Digital Skills &amp; AI</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Labor Markets</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Digitisation &amp; Connectivity</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Wage Inequality</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Gender &amp; Work</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Trade &amp; GVCs</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Development Economics</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Applied Microeconometrics</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Future of Work</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">AI &amp; Occupational Exposure</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Skill Bias &amp; Technology</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.35rem 0.8rem;border:1px solid var(--rule);color:var(--off-black)">Urban Labor Markets</span>
+        </div>
+
+        <div class="rv" style="display:flex;gap:0.6rem;flex-wrap:wrap">
           <a href="#" onclick="gp('research')" class="btn primary">View Research →</a>
           <a href="#" onclick="gp('connect')" class="btn">Get in Touch →</a>
-        </div>
-      </div>
-      <div class="rv rv2">
-        <div class="affil-card">
-          <p class="aff-org">Current</p>
-          <p class="aff-role">World Bank Group · Digital &amp; AI VP</p>
-          <p class="aff-detail">Economist (ETC-C2) · Washington D.C.<br/>STC-MTI (2022) → STC-Digital Dev. GP (2023) → ETC-Digital &amp; AI VP (2024–Present)</p>
-        </div>
-        <div class="affil-card">
-          <p class="aff-org">PhD in Economics</p>
-          <p class="aff-role">IIFT, New Delhi</p>
-          <p class="aff-detail">Thesis submitted · At external reviewers · Expected June 2026<br/><em>Decomposition of Wage Inequality in India: Role of Trade, Technology, and Institutional Factors</em></p>
-        </div>
-        <div class="affil-card">
-          <p class="aff-org">M.A. Economics</p>
-          <p class="aff-role">Ambedkar University, New Delhi · 2015–2017</p>
-        </div>
-        <div class="affil-card">
-          <p class="aff-org">B.A. (Honours) Economics</p>
-          <p class="aff-role">Lakshmibai College, University of Delhi · 2012–2015</p>
         </div>
       </div>
     </div>
@@ -506,6 +505,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
             <div>
               <p class="pub-title">"Changes in Wages and Industry-Level Export Exposure: Implications for India's Wage Inequality"</p>
               <p class="pub-venue">Empirical Economic Letters, 2025</p>
+              <p class="pub-co" style="margin-top:0.4rem;line-height:1.6">Examines how growing export exposure at the industry level shapes wage growth across the earnings distribution in India. Finds that trade integration does not uniformly benefit workers — the distributional effects of export exposure vary significantly by industry and skill level, with implications for how trade policy is designed to protect low-wage workers.</p>
               <div class="tags" style="margin-top:0.5rem"><span class="tag">Wage Inequality</span><span class="tag">Export Exposure</span><span class="tag">India</span><span class="tag">Trade</span></div>
             </div>
           </div>
@@ -514,6 +514,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
             <div>
               <p class="pub-title">"Quantifying Trade's Impact: Decomposing Wage Inequality Dynamics in Post-Liberalization India"</p>
               <p class="pub-venue">Empirical Economic Letters, 2025</p>
+              <p class="pub-co" style="margin-top:0.4rem;line-height:1.6">Decomposes the drivers of changing wage inequality in India in the three decades following liberalization. Separates the contributions of trade, technology, and composition effects — providing a quantitative basis for understanding why inequality rose through 2004 and then declined, and what policy levers matter most at each stage.</p>
               <div class="tags" style="margin-top:0.5rem"><span class="tag">Wage Inequality</span><span class="tag">Trade Liberalization</span><span class="tag">Decomposition</span><span class="tag">India</span></div>
             </div>
           </div>
@@ -523,6 +524,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
               <p class="pub-title">"Factor Endowments and the Structure of Indian Manufacturing"</p>
               <p class="pub-venue">The Indian Economic Journal, 2022</p>
               <p class="pub-co">with Anjali Tandon and Akash Pal</p>
+              <p class="pub-co" style="margin-top:0.4rem;line-height:1.6">Examines how capital-labour ratios and factor proportions shape the structure of Indian manufacturing across industries. Finds that India's industrial composition does not fully reflect its factor endowments, with implications for trade competitiveness and industrial policy design.</p>
               <div class="tags" style="margin-top:0.5rem"><span class="tag">Factor Endowments</span><span class="tag">Manufacturing</span><span class="tag">India</span><span class="tag">Industrial Structure</span></div>
             </div>
           </div>
@@ -532,7 +534,8 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
               <p class="pub-title">"Public Safety for Women: Is Regulation of Social Drinking Spaces Effective?"</p>
               <p class="pub-venue">Journal of Development Studies, 2021</p>
               <p class="pub-co">with Kanika Mahajan</p>
-              <a href="#" class="ri-link" style="margin-top:0.5rem;display:inline-block">Access →</a>
+              <p class="pub-co" style="margin-top:0.4rem;line-height:1.6">Exploits a natural experiment in India — a state-level crackdown on bars serving hard liquor — to estimate the causal effect of alcohol outlet regulation on crimes against women. Using difference-in-differences, finds that restricting access to hard liquor in bars reduces reported sexual assault and harassment by 25%, with no effect on reported rapes. Directly relevant for regulators designing public safety policies targeting the built environment.</p>
+              <a href="https://doi.org/10.1080/00220388.2021.1961747" target="_blank" class="ri-link" style="margin-top:0.5rem;display:inline-block">Journal ↗</a>
               <div class="tags" style="margin-top:0.5rem"><span class="tag">Gender</span><span class="tag">Public Safety</span><span class="tag">Crime</span><span class="tag">Regulation</span><span class="tag">India</span></div>
             </div>
           </div>
@@ -554,7 +557,8 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
               <p class="pub-title">"Evolution of Wage Inequality in India (1983–2017): The Role of Occupational Task Content"</p>
               <p class="pub-venue">Oxford University Press, 2023</p>
               <p class="pub-co">with Kanika Mahajan</p>
-              <a href="#" class="ri-link" style="margin-top:0.5rem;display:inline-block">Access →</a>
+              <p class="pub-co" style="margin-top:0.4rem;line-height:1.6">Documents long-run trends in wage inequality in India across four decades using National Sample Survey data. Finds that wage inequality rose between 1983 and 2004, then declined distinctly through 2018 — driven by strong wage growth at the bottom of the distribution. Attributes this reversal to shifts in the occupational task content of work, particularly the decline of routine manual tasks. No evidence of earnings polarisation. Key reading for understanding how technological change and structural transformation interact with distributional outcomes.</p>
+              <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3312896" target="_blank" class="ri-link" style="margin-top:0.5rem;display:inline-block">SSRN ↗</a>
               <div class="tags" style="margin-top:0.5rem"><span class="tag">Wage Inequality</span><span class="tag">Occupational Tasks</span><span class="tag">Routine vs Non-Routine</span><span class="tag">India</span><span class="tag">Labor Markets</span></div>
             </div>
           </div>
@@ -596,34 +600,41 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
           <div class="wp">
             <p class="wp-title">"Click, Code, Earn: The Returns to Digital Skills"</p>
             <p class="wp-co">with Yan Liu, Antonio Martins-Neto, and Juan Porras · World Bank</p>
+            <p class="wp-co" style="margin-top:0.5rem;line-height:1.65">Estimates wage returns to digital skills in developing economies using job postings and worker profile data. Finds that workers with verifiable digital competencies command significant wage premiums — with stronger returns in higher-income economies and among workers in formal employment. Provides a data-driven case for public investment in digital skills as a wage-boosting and inequality-reducing policy tool.</p>
             <div class="tags" style="margin-top:0.5rem"><span class="tag">Digital Skills</span><span class="tag">Returns to Skills</span><span class="tag">Wages</span><span class="tag">Developing Economies</span></div>
           </div>
           <div class="wp">
             <p class="wp-title">"Is Online Job Posting Data Useful in the Context of Developing Countries?"</p>
             <p class="wp-co">with Shu Yu, Hieu Duc Nguyen, and Yan Liu · World Bank</p>
+            <p class="wp-co" style="margin-top:0.5rem;line-height:1.65">Evaluates whether online job postings — increasingly used to monitor skills demand in rich economies — are valid labor market indicators in lower-income settings with lower internet penetration and informality. Finds that, while coverage is uneven, job posting data captures real-time demand signals that are not available through traditional surveys, and offers guidance on how to use these data responsibly for policy analysis in developing countries.</p>
             <div class="tags" style="margin-top:0.5rem"><span class="tag">Job Postings</span><span class="tag">Data Methods</span><span class="tag">Labor Markets</span><span class="tag">Developing Countries</span></div>
           </div>
           <div class="wp">
             <p class="wp-title">"Do Minimum Wages Reduce Inequality? Evidence from India"</p>
             <p class="wp-co">with Kanika Mahajan and Kunal Sen</p>
-            <p class="wp-note">Ashoka University Discussion Paper No. 139</p>
-            <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+            <p class="wp-note">Ashoka University Discussion Paper No. 139 · Also: IZA DP 16600 · UNU-WIDER WP 2023/67</p>
+            <p class="wp-co" style="margin-top:0.5rem;line-height:1.65">Wage inequality in India fell by 35% between 1999 and 2018, driven by strong real wage growth among low-income workers. This paper asks how much of that decline is attributable to rising minimum wages. Exploiting state-level variation in minimum wage changes — and using a border discontinuity design for robustness — it finds that a 1% increase in the minimum wage raises wages for the lowest quintile by 0.17%, with diminishing effects up the distribution. Minimum wages explain 26% of the overall decline in inequality, without adverse employment effects. Key policy implication: minimum wage policy can be an effective tool for reducing wage disparity in developing economies — including in both formal and informal sectors — without trading off jobs.</p>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634506" target="_blank" class="ri-link" style="margin-top:0.5rem;display:inline-block">SSRN ↗</a>
+            <a href="https://dp.ashoka.edu.in/ash/wpaper/paper139_0.pdf" target="_blank" class="ri-link">PDF ↗</a>
             <div class="tags" style="margin-top:0.5rem"><span class="tag">Minimum Wages</span><span class="tag">Inequality</span><span class="tag">India</span><span class="tag">Labor Policy</span></div>
           </div>
           <div class="wp">
             <p class="wp-title">"GVCs, Skill Bias, and Wage Inequality in India"</p>
             <p class="wp-note">IIFT Working Paper EC-25-77</p>
-            <a href="#" class="ri-link" style="margin-top:0.4rem;display:inline-block">Access →</a>
+            <p class="wp-co" style="margin-top:0.4rem;line-height:1.65">Examines whether deeper integration into global value chains amplifies skill-biased technological change and widens wage inequality in India. Finds that GVC participation raises demand for skilled relative to unskilled labour, contributing to the skill premium. Offers evidence for policymakers on how trade agreements and industrial upgrading strategies interact with distributional outcomes.</p>
+            <a href="#" class="ri-link" style="margin-top:0.5rem;display:inline-block">Access →</a>
             <div class="tags" style="margin-top:0.5rem"><span class="tag">GVCs</span><span class="tag">Skill Bias</span><span class="tag">Wage Inequality</span><span class="tag">India</span><span class="tag">Trade</span></div>
           </div>
           <div class="wp">
             <p class="wp-title">"Understanding Productivity of Indian Firms"</p>
             <p class="wp-co">with Pavel Chakraborty and Ruchita Manghnani</p>
+            <p class="wp-co" style="margin-top:0.4rem;line-height:1.65">Analyses total factor productivity trends across Indian firms using Prowess data. Examines how trade exposure, technology adoption, and firm size interact to determine productivity levels — with implications for industrial policy and India's ambitions to move up global value chains.</p>
             <div class="tags" style="margin-top:0.5rem"><span class="tag">Firm Productivity</span><span class="tag">TFP</span><span class="tag">Manufacturing</span><span class="tag">India</span></div>
           </div>
           <div class="wp">
             <p class="wp-title">"Employment Patterns in the Indian Manufacturing Sector"</p>
             <p class="wp-co">with Pavel Chakraborty and Ruchita Manghnani</p>
+            <p class="wp-co" style="margin-top:0.4rem;line-height:1.65">Documents shifting employment patterns within Indian manufacturing — including changes in contract versus regular employment, capital intensity, and sectoral composition — and their implications for job quality and labor market policy.</p>
             <div class="tags" style="margin-top:0.5rem"><span class="tag">Employment</span><span class="tag">Manufacturing</span><span class="tag">India</span><span class="tag">Firm-Level</span></div>
           </div>
         </div>
@@ -793,17 +804,121 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
 </div>
 
 <!-- ══════════════════════════════
+     DATA WITH SALONI
+══════════════════════════════ -->
+<div class="page" id="page-data">
+
+  <!-- Hero -->
+  <div style="background:var(--black);padding:5rem 4rem 4rem;border-bottom:3px solid var(--gold)">
+    <p style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.6rem"><span style="width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block;flex-shrink:0"></span>Founded 2019 · Active</p>
+    <h2 style="font-family:'Lora',serif;font-size:clamp(2.5rem,5vw,4.2rem);font-weight:400;color:#fff;line-height:1.05;margin-bottom:1.5rem">Data with <em style="font-style:italic;color:var(--gold-lt)">Saloni</em></h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.72);max-width:52rem;line-height:1.85;margin-bottom:3rem">Started in <strong style="color:#fff;font-weight:500">2019</strong> as a response to a gap I kept noticing — researchers, students, and early-career professionals who had the right questions but were stuck on the methods. I built something practical: structured support on econometrics, data analysis, and empirical research design. What began as one-on-one help grew into collaborations with institutions, firms, and a community of researchers across multiple countries. Always open to working with people where <strong style="color:#fff;font-weight:500">data meets policy</strong>.</p>
+
+    <!-- Stats -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(255,255,255,0.12)">
+      <div style="padding:2rem 2.5rem;border-right:1px solid rgba(255,255,255,0.12)">
+        <div style="font-family:'Lora',serif;font-size:3rem;font-weight:400;color:var(--gold-lt);line-height:1">500+</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:0.5rem">Students Taught Globally</div>
+      </div>
+      <div style="padding:2rem 2.5rem;border-right:1px solid rgba(255,255,255,0.12)">
+        <div style="font-family:'Lora',serif;font-size:3rem;font-weight:400;color:var(--gold-lt);line-height:1">50+</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:0.5rem">Theses Supervised</div>
+      </div>
+      <div style="padding:2rem 2.5rem">
+        <div style="font-family:'Lora',serif;font-size:3rem;font-weight:400;color:var(--gold-lt);line-height:1">5,000+</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:0.5rem">Labor Market Indicators Generated</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What I offer -->
+  <div class="sec">
+    <p class="sec-label">What I Do</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+      <div style="border:1px solid var(--rule);padding:2rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem">Teaching</p>
+        <p style="font-family:'Lora',serif;font-size:1.1rem;color:var(--black);margin-bottom:0.65rem">Econometrics &amp; Data Science</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.75">Structured online courses and workshops covering econometrics, statistics, data science, and machine learning — taught to 500+ students across South Asia, MENA, and beyond.</p>
+      </div>
+      <div style="border:1px solid var(--rule);padding:2rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem">Supervision</p>
+        <p style="font-family:'Lora',serif;font-size:1.1rem;color:var(--black);margin-bottom:0.65rem">Thesis &amp; Research Mentoring</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.75">Supervised 50+ undergraduate and postgraduate theses in applied econometrics and development economics. Mentored researchers from method design through to final submission.</p>
+      </div>
+      <div style="border:1px solid var(--rule);padding:2rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem">Collaboration</p>
+        <p style="font-family:'Lora',serif;font-size:1.1rem;color:var(--black);margin-bottom:0.65rem">Institutional &amp; Policy Analytics</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.75">Partnered with universities, research institutions, and advisory firms on labor market data, big data management, biostatistical analysis, and post-disaster employment assessments.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Institutional collaborations -->
+  <div class="sec sec-off" style="padding-top:0">
+    <p class="sec-label">Institutional Collaborations</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule)">
+
+      <div style="background:var(--bg);padding:2rem 2.25rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Ashoka University · India</p>
+        <p style="font-family:'Lora',serif;font-size:1.05rem;color:var(--black);margin-bottom:0.5rem">Labor Markets, Gender &amp; Big Data</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.7">Female LFPR analysis using PLFS. Generated 5,000+ labor market indicators from NSS and PLFS for the CEDA portal. Employment and unemployment trends by state and sector.</p>
+      </div>
+
+      <div style="background:var(--bg);padding:2rem 2.25rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Qatar University · Qatar</p>
+        <p style="font-family:'Lora',serif;font-size:1.05rem;color:var(--black);margin-bottom:0.5rem">Biostatistics &amp; Meta-Analysis</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.7">Survival data analysis using threshold regression models. Mentored three researchers on meta-analysis techniques in health and social science research.</p>
+      </div>
+
+      <div style="background:var(--bg);padding:2rem 2.25rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">FSG · Mumbai, India</p>
+        <p style="font-family:'Lora',serif;font-size:1.05rem;color:var(--black);margin-bottom:0.5rem">Big Data Management</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.7">Developed a harmonized national employment dataset enabling cross-sectoral analysis from large, unstructured microdata sources.</p>
+      </div>
+
+      <div style="background:var(--bg);padding:2rem 2.25rem">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">ISID · India</p>
+        <p style="font-family:'Lora',serif;font-size:1.05rem;color:var(--black);margin-bottom:0.5rem">Industrial Structure &amp; Factor Endowments</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.7">Researched changes in factor proportions in India's manufacturing sector — how capital-labor ratios evolve with trade and technology adoption.</p>
+      </div>
+
+      <div style="background:var(--bg);padding:2rem 2.25rem;grid-column:span 2">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Deft Advisory &amp; Research · India</p>
+        <p style="font-family:'Lora',serif;font-size:1.05rem;color:var(--black);margin-bottom:0.5rem">Post-Disaster Needs Assessment &amp; Skills Evaluation</p>
+        <p style="font-size:0.88rem;color:var(--mid-gray);line-height:1.7">Labor market impact assessments in South Africa and Azerbaijan during COVID-19. Evaluated skill training effectiveness across India's national skills ecosystem.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="sec" style="text-align:center;padding-top:3.5rem;padding-bottom:4rem">
+    <h3 style="font-family:'Lora',serif;font-size:1.6rem;font-style:italic;color:var(--black);margin-bottom:0.75rem">Want to work together?</h3>
+    <p style="font-size:0.95rem;color:var(--mid-gray);max-width:36rem;margin:0 auto 1.75rem;line-height:1.75">Open to collaborations with researchers, institutions, and practitioners on data analysis, empirical methods, and labor market diagnostics.</p>
+    <a href="mailto:skhurana@worldbank.org?subject=Data with Saloni collaboration" class="btn primary">Get in Touch →</a>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════
      CONNECT
 ══════════════════════════════ -->
 <div class="page" id="page-connect">
   <div class="connect-wrap">
-    <p class="con-eyebrow">Open to collaborations &amp; conversations</p>
+    <p class="con-eyebrow">Open to collaborations, conversations &amp; speaking</p>
     <h2 class="con-h">Let's exchange <em>ideas</em></h2>
     <p class="con-sub">On digital skills, AI and labor markets, development economics, data collaborations, or new research questions. Always interested in people working on related problems.</p>
     <a href="mailto:skhurana@worldbank.org" class="con-email">skhurana@worldbank.org</a>
+    <div style="border:1px solid rgba(255,255,255,0.12);padding:1.75rem 2.5rem;margin-bottom:2.5rem;max-width:38rem;text-align:left">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem">Available for Talks &amp; Panels</p>
+      <p style="font-size:0.9rem;color:rgba(255,255,255,0.75);line-height:1.75">I speak on digital skills and labor markets, AI's impact on employment in developing economies, digitisation and connectivity policy, and gender and work. Open to academic conferences, policy forums, and practitioner events.</p>
+      <a href="mailto:skhurana@worldbank.org?subject=Speaking invitation" style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(184,134,11,0.4);display:inline-block;margin-top:0.85rem">Get in touch about speaking →</a>
+    </div>
     <div class="con-links">
       <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank" class="con-btn con-primary">LinkedIn ↗</a>
       <a href="https://x.com/saloni_econ" target="_blank" class="con-btn">@saloni_econ ↗</a>
+      <a href="https://scholar.google.com/citations?user=vmSC6iEAAAAJ&hl=en" target="_blank" class="con-btn">Google Scholar ↗</a>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3312896" target="_blank" class="con-btn">SSRN ↗</a>
       <a href="#" onclick="gp('research')" class="con-btn">Research</a>
     </div>
   </div>
@@ -815,7 +930,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
   <p>© 2025</p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function gp(name,el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
@@ -832,12 +947,4 @@ function rp(name,btn){
   btn.classList.add('on');
 }
 function rv(){
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});
-  },{threshold:0.06});
-  document.querySelectorAll('.rv:not(.on)').forEach(el=>obs.observe(el));
-}
-rv();
-</script>
-</body>
-</html>
+  const obs=new IntersectionObser
