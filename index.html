@@ -50,22 +50,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 @keyframes pfade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 
 /* ── HERO ── */
-.hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 54px);border-bottom:1px solid var(--rule)}
-.hero-left{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--rule)}
-.hero-right{display:flex;flex-direction:column;background:var(--bg-off)}
-.photo-block{flex:0 0 auto;padding:4rem 3rem 2.5rem;display:flex;flex-direction:column;align-items:center;border-bottom:1px solid var(--rule)}
-.photo-initials{width:120px;height:120px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:2rem;font-weight:400;color:var(--gold-lt);letter-spacing:0.05em;flex-shrink:0}
-/* To add photo: replace the div.photo-initials with: <img src="photo.jpg" class="photo-img" alt="Saloni Khurana"> */
-.photo-img{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block}
-.photo-name{font-family:'Lora',serif;font-size:1rem;color:var(--black);margin-top:1rem;text-align:center}
-.photo-role{font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-top:0.3rem;text-align:center}
-.h-stats{flex:1}
-.h-stat{padding:1.1rem 3rem;border-bottom:1px solid var(--rule)}
-.h-stat:last-child{border-bottom:none}
-.h-stat-lbl{font-family:'JetBrains Mono',monospace;font-size:0.56rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.28rem}
-.h-stat-val{font-size:0.85rem;color:var(--dark-gray);line-height:1.45}
-.h-stat-val a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.18s}
-.h-stat-val a:hover{border-bottom-color:var(--gold)}
+.hero-full{border-bottom:1px solid var(--rule)}
+.hero-top{display:grid;grid-template-columns:1fr auto;align-items:center;padding:5rem 4rem 4rem;gap:4rem;min-height:calc(100vh - 54px - 80px)}
+.hero-name-block{max-width:600px}
+.hero-photo-block{display:flex;flex-direction:column;align-items:center;gap:0.75rem;flex-shrink:0}
+.hero-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);background:var(--bg-off)}
+.hs-item{padding:1.25rem 2rem;border-right:1px solid var(--rule)}
+.hs-item:last-child{border-right:none}
+.hs-lbl{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem}
+.hs-val{font-size:0.85rem;color:var(--off-black);line-height:1.5}
+.hs-val a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.18s}
+.hs-val a:hover{border-bottom-color:var(--gold)}
+.photo-initials{width:150px;height:150px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:2.5rem;font-weight:400;color:var(--gold-lt);letter-spacing:0.05em;flex-shrink:0}
+/* To add photo: replace div.photo-initials with: <img src="photo.jpg" class="photo-img" alt="Saloni Khurana"> */
+.photo-img{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block}
+.photo-name{font-family:'Lora',serif;font-size:0.95rem;color:var(--black);text-align:center}
+.photo-role{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-align:center}
 .h-eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.6rem}
 .h-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
 .h-name{font-family:'Lora',serif;font-size:clamp(2.8rem,5vw,4.8rem);font-weight:400;line-height:1.0;color:var(--black)}
@@ -171,10 +171,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:54px;display:flex;ali
 footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);padding:1.25rem 4rem;display:flex;justify-content:space-between;align-items:center}
 footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing:0.08em;color:rgba(255,255,255,0.2)}
 
-/* ── REVEAL ── */
-.rv{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease,transform 0.6s ease}
-.rv.on{opacity:1;transform:none}
-.rv2{transition-delay:0.1s}.rv3{transition-delay:0.2s}
+/* ── REVEAL - disabled opacity trick, just use fade-in on page switch ── */
+.rv{transition:opacity 0.4s ease}
+.rv.on{opacity:1}
 
 /* ── MOBILE ── */
 @media(max-width:900px){
@@ -184,15 +183,12 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
   .n-links a{padding:0.9rem 1.5rem;border-bottom:1px solid var(--rule-soft);font-size:0.65rem}
   .n-links a::after{display:none}
   .n-burger{display:flex}
-  .hero{grid-template-columns:1fr;min-height:auto}
-  .hero-left{padding:3.5rem 1.5rem 3rem;border-right:none}
-  .hero-right{flex-direction:row;border-top:1px solid var(--rule);overflow-x:auto}
-  .photo-block{padding:2rem 1.5rem;border-bottom:none;border-right:1px solid var(--rule);flex-shrink:0}
+  .hero-top{grid-template-columns:1fr;padding:3rem 1.5rem 2.5rem;min-height:auto;gap:2rem}
+  .hero-photo-block{flex-direction:row;gap:1.25rem;align-items:center;justify-content:flex-start}
   .photo-initials,.photo-img{width:80px;height:80px;font-size:1.4rem}
-  .photo-name{font-size:0.85rem}
-  .h-stats{display:flex;flex-direction:row;overflow-x:auto;-webkit-overflow-scrolling:touch}
-  .h-stat{padding:1.1rem 1.25rem;border-bottom:none;border-right:1px solid var(--rule);min-width:160px;flex-shrink:0}
-  .h-stat:last-child{border-right:none}
+  .hero-strip{grid-template-columns:1fr 1fr;border-top:1px solid var(--rule)}
+  .hs-item{border-bottom:1px solid var(--rule);padding:1rem 1.25rem}
+  .hs-item:nth-child(2n){border-right:none}
   .sec{padding:3.5rem 1.5rem}
   .res-wrap{grid-template-columns:1fr}
   .res-nav{border-right:none;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:repeat(2,1fr)}
@@ -218,12 +214,12 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
 
 <!-- NAV -->
 <nav>
-  <a class="n-logo" href="#" onclick="gp('home',this)">Saloni <span>Khurana</span></a>
+  <a class="n-logo" href="javascript:void(0)" onclick="gp('home',this)">Saloni <span>Khurana</span></a>
   <ul class="n-links" id="nLinks">
-    <li><a href="#" onclick="gp('home',this)" class="active">About</a></li>
-    <li><a href="#" onclick="gp('research',this)">Research</a></li>
-    <li><a href="#" onclick="gp('data',this)">Data with Saloni</a></li>
-    <li><a href="#" onclick="gp('connect',this)">Connect</a></li>
+    <li><a href="javascript:void(0)" onclick="gp('home',this)" class="active">About</a></li>
+    <li><a href="javascript:void(0)" onclick="gp('research',this)">Research</a></li>
+    <li><a href="javascript:void(0)" onclick="gp('data',this)">Data with Saloni</a></li>
+    <li><a href="javascript:void(0)" onclick="gp('connect',this)">Connect</a></li>
   </ul>
   <div class="n-burger" onclick="document.getElementById('nLinks').classList.toggle('open')">
     <span></span><span></span><span></span>
@@ -235,46 +231,49 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
 ══════════════════════════════ -->
 <div class="page active" id="page-home">
 
-  <div class="hero">
-    <div class="hero-left">
-      <p class="h-eyebrow">World Bank · Digital &amp; AI Vice Presidency</p>
-      <h1 class="h-name">Saloni<br/><em>Khurana</em></h1>
-      <div class="h-divider"></div>
-      <p class="h-bio">
-        Economist researching how <strong>skills and technology reshape labor markets</strong> — and how digitisation, from connectivity to AI, can support better outcomes in developing economies.
-      </p>
-      <div class="h-links">
-        <a href="#" onclick="gp('research')" class="btn primary">Research</a>
-        <a href="#" onclick="gp('connect')" class="btn">Connect</a>
-        <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank" class="btn">LinkedIn ↗</a>
-        <a href="https://x.com/saloni_econ" target="_blank" class="btn">X ↗</a>
+  <div class="hero-full">
+    <div class="hero-top">
+      <div class="hero-name-block">
+        <p class="h-eyebrow">World Bank · Digital &amp; AI Vice Presidency</p>
+        <h1 class="h-name">Saloni<br/><em>Khurana</em></h1>
+        <div class="h-divider"></div>
+        <p class="h-bio">
+          Economist researching how <strong>skills and technology reshape labor markets</strong> — and how digitisation, from connectivity to AI, can support better outcomes in developing economies.
+        </p>
+        <div class="h-links">
+          <a href="javascript:void(0)" onclick="gp('research')" class="btn primary">Research</a>
+          <a href="javascript:void(0)" onclick="gp('connect')" class="btn">Connect</a>
+          <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank" class="btn">LinkedIn ↗</a>
+          <a href="https://x.com/saloni_econ" target="_blank" class="btn">X ↗</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-right">
-      <div class="photo-block">
+      <div class="hero-photo-block">
         <!-- To add photo: replace the div below with <img src="photo.jpg" class="photo-img" alt="Saloni Khurana"> -->
         <div class="photo-initials">SK</div>
         <p class="photo-name">Saloni Khurana</p>
         <p class="photo-role">Economist · World Bank</p>
       </div>
-      <div class="h-stats">
-        <div class="h-stat">
-          <p class="h-stat-lbl">Current</p>
-          <p class="h-stat-val">Economist (ETC-C2)<br/>Digital &amp; AI VP · World Bank</p>
-        </div>
-        <div class="h-stat">
-          <p class="h-stat-lbl">PhD in Economics</p>
-          <p class="h-stat-val">IIFT, New Delhi<br/>Thesis submitted · Exp. June 2026</p>
-        </div>
-        <div class="h-stat">
-          <p class="h-stat-lbl">Find Me</p>
-          <p class="h-stat-val">
-            <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank">LinkedIn ↗</a>&ensp;
-            <a href="https://x.com/saloni_econ" target="_blank">X ↗</a><br/>
-            <a href="https://scholar.google.com/citations?user=vmSC6iEAAAAJ&hl=en" target="_blank">Google Scholar ↗</a>&ensp;
-            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3312896" target="_blank">SSRN ↗</a>
-          </p>
-        </div>
+    </div>
+    <div class="hero-strip">
+      <div class="hs-item">
+        <p class="hs-lbl">Current Role</p>
+        <p class="hs-val">Economist (ETC-C2) · Digital &amp; AI VP · World Bank</p>
+      </div>
+      <div class="hs-item">
+        <p class="hs-lbl">PhD in Economics</p>
+        <p class="hs-val">IIFT New Delhi · Thesis submitted · Exp. June 2026</p>
+      </div>
+      <div class="hs-item">
+        <p class="hs-lbl">Research Focus</p>
+        <p class="hs-val">Digital Skills · AI &amp; Labor · Wage Inequality · GVCs · Gender</p>
+      </div>
+      <div class="hs-item">
+        <p class="hs-lbl">Find Me</p>
+        <p class="hs-val">
+          <a href="https://scholar.google.com/citations?user=vmSC6iEAAAAJ&amp;hl=en" target="_blank">Scholar ↗</a>&nbsp;&nbsp;
+          <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3312896" target="_blank">SSRN ↗</a>&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank">LinkedIn ↗</a>
+        </p>
       </div>
     </div>
   </div>
@@ -304,8 +303,8 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
         </div>
 
         <div class="rv" style="display:flex;gap:0.6rem;flex-wrap:wrap">
-          <a href="#" onclick="gp('research')" class="btn primary">View Research →</a>
-          <a href="#" onclick="gp('connect')" class="btn">Get in Touch →</a>
+          <a href="javascript:void(0)" onclick="gp('research')" class="btn primary">View Research →</a>
+          <a href="javascript:void(0)" onclick="gp('connect')" class="btn">Get in Touch →</a>
         </div>
       </div>
     </div>
@@ -895,7 +894,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
   <div class="sec" style="text-align:center;padding-top:3.5rem;padding-bottom:4rem">
     <h3 style="font-family:'Lora',serif;font-size:1.6rem;font-style:italic;color:var(--black);margin-bottom:0.75rem">Want to work together?</h3>
     <p style="font-size:0.95rem;color:var(--mid-gray);max-width:36rem;margin:0 auto 1.75rem;line-height:1.75">Open to collaborations with researchers, institutions, and practitioners on data analysis, empirical methods, and labor market diagnostics.</p>
-    <a href="mailto:skhurana@worldbank.org?subject=Data with Saloni collaboration" class="btn primary">Get in Touch →</a>
+    <a href="/cdn-cgi/l/email-protection#7d0e1615080f1c131c3d0a120f11191f1c131653120f1a420e081f17181e0940391c091c584f4d0a140915584f4d2e1c11121314584f4d1e1211111c1f120f1c09141213" class="btn primary">Get in Touch →</a>
   </div>
 
 </div>
@@ -908,18 +907,18 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
     <p class="con-eyebrow">Open to collaborations, conversations &amp; speaking</p>
     <h2 class="con-h">Let's exchange <em>ideas</em></h2>
     <p class="con-sub">On digital skills, AI and labor markets, development economics, data collaborations, or new research questions. Always interested in people working on related problems.</p>
-    <a href="mailto:skhurana@worldbank.org" class="con-email">skhurana@worldbank.org</a>
+    <a href="/cdn-cgi/l/email-protection#5e2d35362b2c3f303f1e29312c323a3c3f303570312c39" class="con-email">skhurana&#64;worldbank.org</a>
     <div style="border:1px solid rgba(255,255,255,0.12);padding:1.75rem 2.5rem;margin-bottom:2.5rem;max-width:38rem;text-align:left">
       <p style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem">Available for Talks &amp; Panels</p>
       <p style="font-size:0.9rem;color:rgba(255,255,255,0.75);line-height:1.75">I speak on digital skills and labor markets, AI's impact on employment in developing economies, digitisation and connectivity policy, and gender and work. Open to academic conferences, policy forums, and practitioner events.</p>
-      <a href="mailto:skhurana@worldbank.org?subject=Speaking invitation" style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(184,134,11,0.4);display:inline-block;margin-top:0.85rem">Get in touch about speaking →</a>
+      <a href="/cdn-cgi/l/email-protection#285b43405d5a494649685f475a444c4a49464306475a4f175b5d4a424d4b5c157b584d494341464f0d1a1841465e415c495c414746" style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(184,134,11,0.4);display:inline-block;margin-top:0.85rem">Get in touch about speaking →</a>
     </div>
     <div class="con-links">
       <a href="https://www.linkedin.com/in/saloni-khurana-economist/" target="_blank" class="con-btn con-primary">LinkedIn ↗</a>
       <a href="https://x.com/saloni_econ" target="_blank" class="con-btn">@saloni_econ ↗</a>
       <a href="https://scholar.google.com/citations?user=vmSC6iEAAAAJ&hl=en" target="_blank" class="con-btn">Google Scholar ↗</a>
       <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3312896" target="_blank" class="con-btn">SSRN ↗</a>
-      <a href="#" onclick="gp('research')" class="con-btn">Research</a>
+      <a href="javascript:void(0)" onclick="gp('research')" class="con-btn">Research</a>
     </div>
   </div>
 </div>
@@ -932,19 +931,21 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:0.55rem;letter-spacing
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function gp(name,el){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.getElementById('page-'+name).classList.add('active');
-  document.querySelectorAll('.n-links a').forEach(a=>a.classList.remove('active'));
-  if(el&&el.classList)el.classList.add('active');
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  var page = document.getElementById('page-'+name);
+  if(page) page.classList.add('active');
+  document.querySelectorAll('.n-links a').forEach(function(a){a.classList.remove('active');});
+  if(el && el.classList) el.classList.add('active');
   window.scrollTo(0,0);
   document.getElementById('nLinks').classList.remove('open');
-  setTimeout(rv,60);
 }
 function rp(name,btn){
-  document.querySelectorAll('.res-panel').forEach(p=>p.classList.remove('on'));
-  document.querySelectorAll('.res-btn').forEach(b=>b.classList.remove('on'));
-  document.getElementById('rp-'+name).classList.add('on');
+  document.querySelectorAll('.res-panel').forEach(function(p){p.classList.remove('on');});
+  document.querySelectorAll('.res-btn').forEach(function(b){b.classList.remove('on');});
+  var panel = document.getElementById('rp-'+name);
+  if(panel) panel.classList.add('on');
   btn.classList.add('on');
 }
-function rv(){
-  const obs=new IntersectionObser
+</script>
+</body>
+</html>
